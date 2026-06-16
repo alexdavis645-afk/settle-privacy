@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Delete Your Account — Settle: Baby Names</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
-           font: 16px/1.6 -apple-system, system-ui, Segoe UI, Roboto, sans-serif; }
-    h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
-    .updated { color: #666; font-size: 0.9rem; }
-    code { background: rgba(127,127,127,.15); padding: .1em .3em; border-radius: 3px; }
-    ol li { margin: .4rem 0; }
-  </style>
-</head>
-<body>
-  <h1>Delete Your Account — Settle: Baby Names</h1>
-  <p class="updated">Last updated: 16 June 2026</p>
-
-  <p>This page explains how to request deletion of your account and associated data in the
-  <strong>Settle: Baby Names</strong> app (<code>com.settlebabynames</code>). See also our
-  <a href="./">Privacy Policy</a>.</p>
-
-  <h2>How to request deletion</h2>
-  <ol>
-    <li>Email <a href="mailto:DaveAppDevelopment@gmail.com">DaveAppDevelopment@gmail.com</a> from the
-      email address associated with your Settle account.</li>
-    <li>Use the subject line <strong>&ldquo;Delete my account&rdquo;</strong>.</li>
-    <li>We will verify your request and permanently delete your account and associated data
-      within <strong>30 days</strong>, and confirm by email once done.</li>
-  </ol>
-
-  <h2>What is deleted</h2>
-  <p>When your account is deleted, we permanently remove all data associated with it:</p>
-  <ul>
-    <li>Your account details: email address and Google account identifier</li>
-    <li>Your name preferences and swipe history (names you approved, rejected, or super-liked)</li>
-    <li>Your filter settings (gender, era of origin, cultural origin)</li>
-    <li>Any custom names you added</li>
-    <li>Your ranked shortlist of matched names</li>
-    <li>The link between your account and your partner's account</li>
-    <li>Your active login sessions</li>
-  </ul>
-
-  <h2>What is kept, and for how long</h2>
-  <p>We do not retain your personal data after deletion. Residual copies in routine backups
-  are purged within <strong>30 days</strong> of your request. We keep no account data for
-  marketing or analytics, and we do not retain data for any additional period beyond what is
-  needed to complete deletion.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about deletion: <a href="mailto:DaveAppDevelopment@gmail.com">DaveAppDevelopment@gmail.com</a></p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delete your Settle: Baby Names account</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        padding: 2rem 1rem 4rem;
+        background: #fafafa;
+        color: #1a1a1a;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+      }
+      .updated {
+        color: #666;
+        font-size: 0.9rem;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+      }
+      ul,
+      ol {
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      a {
+        color: #2563eb;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Delete your Settle: Baby Names account</h1>
+      <p class="updated">Last updated: 16 June 2026</p>
+      <p>This page explains how to permanently delete your Settle: Baby Names account (package com.settlebabynames) and the data associated with it. Deletion is permanent and cannot be undone.</p>
+    <section id="how-to-delete">
+      <h2>How to request deletion</h2>
+      <p>The fastest way to delete your account is from inside the app:</p>
+      <ol>
+        <li>Open Settle: Baby Names.</li>
+        <li>Tap the gear icon in the top-right header to open Settings.</li>
+        <li>Scroll to Delete account.</li>
+        <li>Tap Delete my account, type DELETE to confirm, and tap Delete account.</li>
+      </ol>
+      <p>Your account is deleted immediately and you are signed out on every device.</p>
+    </section>
+    <section id="what-is-deleted">
+      <h2>What is deleted</h2>
+      <p>When you delete your account, in a single database transaction we permanently remove:</p>
+      <ul>
+        <li>Your account record — your email address, Google account ID, filter preferences, daily swipe-limit counters, and your subscription-status mirror. We never store your card or payment details, so there is nothing of that kind to delete.</li>
+        <li>Your sign-in sessions — every signed-in device is logged out.</li>
+        <li>Your swipes — all of your approvals, rejections, superlikes, and unseen-queue entries.</li>
+      </ul>
+      <p>If you are not linked with a partner (a solo couple), we also delete everything else tied to your couple: the custom names you added, your match rankings, and the empty couple record itself.</p>
+    </section>
+    <section id="what-is-kept">
+      <h2>What is kept if you are linked with a partner</h2>
+      <p>If you delete your account while linked with a partner, your partner keeps their own account and data. We delete your account, sessions, and swipes as above, but we do not delete data that belongs to or is shared with your partner:</p>
+      <ul>
+        <li>Your partner's account, sign-in, and swipes are untouched.</li>
+        <li>The custom names you added together stay with your partner. These names are shared by the couple and carry no separate per-person ownership, so deleting them would destroy your partner's data.</li>
+        <li>The couple record remains, because your partner is still in it.</li>
+      </ul>
+      <p>Shared matches that depended on your approval disappear from both of you, because a match requires approvals from both partners.</p>
+    </section>
+    <section id="retention">
+      <h2>Retention period</h2>
+      <p>Your live account data is deleted immediately when you confirm — it is removed in one transaction, with no grace period for the active records.</p>
+      <p>Copies of your data may remain in routine encrypted database backups for up to 24 hours before those backups are rotated out, after which no copy remains.</p>
+    </section>
+    <section id="app-details">
+      <h2>App and developer</h2>
+      <ul>
+        <li>App (store listing) name: Settle: Baby Names</li>
+        <li>Package: com.settlebabynames</li>
+      </ul>
+    </section>
+    </main>
+  </body>
 </html>
