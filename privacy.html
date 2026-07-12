@@ -47,22 +47,23 @@
   <body>
     <main>
       <h1>Privacy Policy for Settle: Baby Names</h1>
-      <p class="updated">Last updated: 1 July 2026</p>
+      <p class="updated">Last updated: 12 July 2026</p>
     <section id="intro">
       <h2>Who we are</h2>
-      <p>This Privacy Policy explains how Settle: Baby Names ("Settle", "we", "us") collects, uses, and protects your information when you use the app. Settle: Baby Names is published by Alex Davis (a sole trader) and distributed under the package identifier com.settlebabynames.</p>
+      <p>This Privacy Policy explains how Settle: Baby Names ("Settle", "we", "us") collects, uses, and protects your information when you use the app. Settle: Baby Names is published by Dave App Development Ltd (trading as Settle) and distributed under the package identifier com.settlebabynames.</p>
       <p>By using Settle you agree to the practices described in this policy. If you do not agree, please do not use the app.</p>
     </section>
     <section id="information-we-collect">
       <h2>Information we collect</h2>
       <p>We collect only the information needed to run the app:</p>
       <ul>
-        <li>Account identifiers from Google Sign-In: your email address and your Google account ID. Signing in requests the basic "profile" and "email" scopes, but we store only your email and Google account ID — your name and profile picture are discarded and never saved.</li>
+        <li>Account identifiers from Google Sign-In: your email address and your Google account ID. Signing in requests the basic "profile" and "email" scopes, but we store only your email and Google account ID. Your name and profile picture are discarded and never saved.</li>
         <li>Your activity in the app: the names you swipe on (approve, reject, or superlike), your filter preferences (gender, decade, and origin), any custom names you add, and your saved match rankings.</li>
         <li>Your couple link: if you pair with a partner, we store the connection between your two accounts so that your shared names and matches can sync.</li>
-        <li>Sign-in sessions: a session credential for each device you sign in on. On your device it is held in the operating system's secure storage (the Android Keystore on Android, or the Keychain on iOS); on our servers it is stored only as a one-way hash, never in its original form.</li>
-        <li>Subscription status: if you buy Premium, we store only whether your subscription is active and when it expires. We never receive or store your card or payment details.</li>
+        <li>Sign-in sessions: a session credential for each device you sign in on. On Android it is held in the device's secure keystore; on our servers it is stored only as a one-way hash, never in its original form.</li>
+        <li>Subscription status: if you buy Premium, we store only whether your subscription is active and when it expires. We never receive or store your card or payment details — payment is handled entirely by the payment provider for where you bought (the app store on mobile, or Paddle on the web), as described under "Payments" below.</li>
         <li>A small daily usage counter, used to enforce the free daily swipe limit.</li>
+        <li>Analytics and advertising-measurement data: through Google Firebase Analytics we collect standard app-usage and device information (such as app version, device model, and general region), a Google advertising identifier where available (on iOS only if you allow it, see "Analytics and advertising measurement" below), and, when you first buy Premium, a purchase event recording the amount, currency, and store transaction identifier.</li>
       </ul>
     </section>
     <section id="how-we-use-it">
@@ -73,8 +74,24 @@
         <li>To store your preferences and the names you swipe on.</li>
         <li>To sync names and matches between you and your partner.</li>
         <li>To enforce the free daily swipe limit and to unlock unlimited swiping for Premium subscribers.</li>
+        <li>To understand how the app is used and to measure the effectiveness of our advertising, using Google Firebase Analytics (see below).</li>
       </ul>
-      <p>We do not sell your data and we do not use it for advertising. Settle contains no advertising, analytics, or crash-reporting software.</p>
+      <p>We do not sell your data and we do not show advertising inside Settle. We do use Google Firebase Analytics to understand usage and to measure our advertising, and Settle contains no crash-reporting software.</p>
+    </section>
+    <section id="analytics">
+      <h2>Analytics and advertising measurement</h2>
+      <p>We use Google Firebase Analytics to understand how the app is used and to measure the effectiveness of our advertising. We do not show ads inside Settle, and we do not sell your data.</p>
+      <p>When you first purchase Premium, we send Google Firebase Analytics a "purchase" event recording the purchase amount, its currency, and the store transaction identifier. This is linked to Google Ads so that, if you arrived from one of our advertisements, the purchase can be attributed to it, helping us reach more people who would enjoy Settle. This event is sent only on an initial purchase, never on a renewal or a restore.</p>
+      <p>Firebase Analytics also collects standard, largely aggregated information about how the app is used and about your device (for example app version, device model, and general region), together with a Google advertising identifier where available. On iOS this advertising identifier (the IDFA) is used only if you allow it through the App Tracking Transparency prompt; if you decline, the app works in exactly the same way and the purchase event is still recorded, only without the advertising identifier. You can change your tracking choice at any time in your device's Settings.</p>
+    </section>
+    <section id="payments">
+      <h2>Payments</h2>
+      <p>Settle offers an optional paid Premium upgrade. We never see or store your card or full payment details. Payment is processed entirely by a payment provider that acts as the merchant of record for your purchase, which differs by where you buy:</p>
+      <ul>
+        <li>On the web (settledevelopment.com), payments are processed by Paddle (Paddle.com Market Ltd), our authorised reseller and merchant of record. To take payment and meet its tax and legal obligations, Paddle collects information such as your name, email address, billing address, and payment details directly, and handles billing, invoicing, sales tax/VAT, and refunds. Paddle acts as an independent data controller for that payment information; its handling is governed by Paddle's buyer privacy notice at paddle.com/legal/privacy.</li>
+        <li>In the Android app, payments are processed by Google Play; in the iPhone or iPad app (coming soon), by Apple. Their handling of your payment information is governed by Google's and Apple's own privacy policies.</li>
+      </ul>
+      <p>In every case we receive only a confirmation of your subscription status — whether Premium is active and when it expires — never your card number or full payment details.</p>
     </section>
     <section id="where-stored">
       <h2>Where your data is stored</h2>
@@ -84,17 +101,17 @@
       <h2>Third-party services</h2>
       <p>We rely on a small number of service providers to run the app. They process data on our behalf; we do not sell or share your data with third parties for their own purposes.</p>
       <ul>
-        <li>Google — for Google Sign-In and for hosting our backend on Google Cloud.</li>
-        <li>Neon — for hosting our PostgreSQL database.</li>
-        <li>RevenueCat and the app store (Google Play on Android, or the Apple App Store on iOS) — only if you purchase a subscription, to process the payment and to manage your subscription status. Payment is handled by the app store; we never receive your card details.</li>
+        <li>Google: for Google Sign-In, for hosting our backend on Google Cloud, and (through Google Firebase Analytics and Google Ads) for app analytics and measuring the effectiveness of our advertising (see "Analytics and advertising measurement").</li>
+        <li>Neon: for hosting our PostgreSQL database.</li>
+        <li>RevenueCat, and the payment provider for where you buy — the app store (Google Play or the App Store) for in-app purchases, or Paddle (Paddle.com Market Ltd) for purchases made on the web: only if you purchase Premium, to process the payment and to manage your subscription status. Payment is handled by that provider as merchant of record (see "Payments" above); we never receive your card details.</li>
       </ul>
-      <p>Settle does not include any third-party analytics, advertising, or crash-reporting software.</p>
+      <p>Settle shows no in-app advertising and includes no crash-reporting software. The only analytics we use is Google Firebase Analytics, as described above.</p>
     </section>
     <section id="retention-and-deletion">
       <h2>Data retention and deletion</h2>
       <p>We keep your data for as long as your account is active.</p>
       <p>You can permanently delete your account and its data at any time from inside the app: open Settings (the gear icon in the top-right header), scroll to Delete account, then confirm by typing DELETE. Your account is deleted immediately and you are signed out.</p>
-      <p>When you delete your account we remove your account record, your sign-in sessions, and your swipes. If you are not linked with a partner, we also delete your custom names, your match rankings, and your couple record. If you are linked with a partner, your partner keeps their own account and the custom names you added together — these are shared by the couple and have no separate per-person ownership.</p>
+      <p>When you delete your account we remove your account record, your sign-in sessions, and your swipes. If you are not linked with a partner, we also delete your custom names, your match rankings, and your couple record. If you are linked with a partner, your partner keeps their own account and the custom names you added together. These are shared by the couple and have no separate per-person ownership.</p>
       <p>Live data is deleted immediately when you confirm. Copies may remain in routine encrypted backups for up to 24 hours before those backups are rotated out, after which no copy remains.</p>
     </section>
     <section id="children">
@@ -107,7 +124,7 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>If you have any questions about this policy or your data, contact us at DaveAppDevelopment@gmail.com.</p>
+      <p>If you have any questions about this policy or your data, contact us at alex@settledevelopment.com.</p>
     </section>
     </main>
   </body>
