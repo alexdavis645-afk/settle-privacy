@@ -41,7 +41,7 @@
         <span class="pill">Settle: Baby Names</span>
         <h1 style="font-size:44px;line-height:1.08;color:#333935;margin:18px 0 10px;">Privacy Policy</h1>
         <p class="lede" style="margin:0;">How we collect, use, and protect your information &mdash; and the few services we rely on to run the app.</p>
-        <p class="muted" style="margin:14px 0 0;">Last updated 19 July 2026</p>
+        <p class="muted" style="margin:14px 0 0;">Last updated 25 September 2026</p>
       </div>
     </header>
     <main class="wrap" style="padding:8px 24px 8px;">
@@ -82,6 +82,7 @@
       <p>We use Google Firebase Analytics to understand how the app is used and to measure the effectiveness of our advertising. We do not sell your data.</p>
       <p>When you first purchase Premium, we send Google Firebase Analytics a "purchase" event recording the purchase amount, its currency, and the store transaction identifier. This is linked to Google Ads so that, if you arrived from one of our advertisements, the purchase can be attributed to it, helping us reach more people who would enjoy Settle. This event is sent only on an initial purchase, never on a renewal or a restore.</p>
       <p>Firebase Analytics also collects standard, largely aggregated information about how the app is used and about your device (for example app version, device model, and general region), together with a Google advertising identifier where available. On iOS this advertising identifier (the IDFA) is used only if you allow it through the App Tracking Transparency prompt; if you decline, the app works in exactly the same way and the purchase event is still recorded, only without the advertising identifier. You can change your tracking choice at any time in your device's Settings.</p>
+      <p>In the Android and iPhone apps, when you sign in we also give RevenueCat (our subscription provider, see "Third-party services") the identifier Firebase Analytics assigns to your installation of the app. It is not your name or email address. If you then buy Premium after being referred by a friend, our server uses it to record that purchase in Google Firebase Analytics against your app installation, so we can measure how well referrals work. It is not used for advertising.</p>
     </section>
     <section id="crash-reporting">
       <h2>Crash reporting</h2>
@@ -109,6 +110,7 @@
         <li>Google: for Google Sign-In, for hosting our backend on Google Cloud, (through Google Firebase Analytics and Google Ads) for app analytics and measuring the effectiveness of our advertising (see "Analytics and advertising measurement"), and (through Google Firebase Crashlytics, in the mobile apps only) for crash and error reporting (see "Crash reporting").</li>
         <li>Neon: for hosting our PostgreSQL database.</li>
         <li>RevenueCat, and the payment provider for where you buy — the app store (Google Play or the App Store) for in-app purchases, or Paddle (Paddle.com Market Ltd) for purchases made on the web: only if you purchase Premium, to process the payment and to manage your subscription status. Payment is handled by that provider as merchant of record (see "Payments" above); we never receive your card details.</li>
+        <li>RevenueCat also holds, in the mobile apps and whether or not you purchase, your app installation's Firebase Analytics identifier, so that a referred purchase can be recorded in analytics (see "Analytics and advertising measurement").</li>
       </ul>
       <p>The only analytics we use is Google Firebase Analytics, and the only crash reporting we use is Google Firebase Crashlytics, both as described above.</p>
     </section>
