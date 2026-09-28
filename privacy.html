@@ -41,7 +41,7 @@
         <span class="pill">Baby Names by Settle</span>
         <h1 style="font-size:44px;line-height:1.08;color:#333935;margin:18px 0 10px;">Privacy Policy</h1>
         <p class="lede" style="margin:0;">How we collect, use, and protect your information &mdash; and the few services we rely on to run the app.</p>
-        <p class="muted" style="margin:14px 0 0;">Last updated 27 September 2026</p>
+        <p class="muted" style="margin:14px 0 0;">Last updated 28 September 2026</p>
       </div>
     </header>
     <main class="wrap" style="padding:8px 24px 8px;">
@@ -87,7 +87,7 @@
       <p>So that we can understand how people move through the app over time — for example, which screens lead people to keep using Settle or to upgrade — and improve it, we attach two things to this analytics data, in the apps and on the web. The first is your account type: guest, free, or Premium, which is attached from your first visit. The second, only while you are signed in, is a pseudonymous member identifier: a code our server derives from your account using a one-way, secret-keyed hash. It is not your account ID, email address, or name, and Google cannot turn it back into any of them. We use these only for product analytics, never for advertising.</p>
       <p>Google processes this analytics data on our behalf. We also export a copy of it to Google BigQuery, a data warehouse in our own Google Cloud project stored in the European Union, where only we can analyse it.</p>
       <p>Google Analytics keeps event-level data for 2 months and user-level data for up to 14 months from your last activity. The copy in our BigQuery project is kept for up to 14 months and then deleted.</p>
-      <p>In the Android and iPhone apps, when you sign in we also give RevenueCat (our subscription provider, see "Third-party services") the identifier Firebase Analytics assigns to your installation of the app. It is not your name or email address. If you then buy Premium after being referred by a friend, our server uses it to record that purchase in Google Firebase Analytics against your app installation, so we can measure how well referrals work. It is not used for advertising.</p>
+      <p>In the Android and iPhone apps, when you sign in we also give RevenueCat (our subscription provider, see "Third-party services") the identifier Firebase Analytics assigns to your installation of the app. It is not your name or email address. If you then buy Premium after being referred by a friend, our server uses it to record that purchase in Google Firebase Analytics against your app installation, so we can measure how well referrals work. It is not used for advertising. We clear it from RevenueCat when you delete your account.</p>
     </section>
     <section id="crash-reporting">
       <h2>Crash reporting</h2>
@@ -115,7 +115,7 @@
         <li>Google: for Google Sign-In, for hosting our backend on Google Cloud, (through Google Firebase Analytics and Google Ads) for app analytics and measuring the effectiveness of our advertising (see "Analytics and advertising measurement"), and (through Google Firebase Crashlytics, in the mobile apps only) for crash and error reporting (see "Crash reporting").</li>
         <li>Neon: for hosting our PostgreSQL database.</li>
         <li>RevenueCat, and the payment provider for where you buy — the app store (Google Play or the App Store) for in-app purchases, or Paddle (Paddle.com Market Ltd) for purchases made on the web: only if you purchase Premium, to process the payment and to manage your subscription status. Payment is handled by that provider as merchant of record (see "Payments" above); we never receive your card details.</li>
-        <li>RevenueCat also holds, in the mobile apps and whether or not you purchase, your app installation's Firebase Analytics identifier, so that a referred purchase can be recorded in analytics (see "Analytics and advertising measurement").</li>
+        <li>RevenueCat also holds, in the mobile apps and whether or not you purchase, your app installation's Firebase Analytics identifier until you delete your account, so that a referred purchase can be recorded in analytics (see "Analytics and advertising measurement").</li>
       </ul>
       <p>The only analytics we use is Google Firebase Analytics, and the only crash reporting we use is Google Firebase Crashlytics, both as described above.</p>
     </section>
@@ -126,6 +126,7 @@
       <p>When you delete your account we remove your account record, your sign-in sessions, and your swipes. If you are not linked with a partner, we also delete your custom names, your match rankings, and your couple record. If you are linked with a partner, your partner keeps their own account and the custom names you added together. These are shared by the couple and have no separate per-person ownership.</p>
       <p>Live data is deleted immediately when you confirm. Copies may remain in routine encrypted backups for up to 24 hours before those backups are rotated out, after which no copy remains.</p>
       <p>Deleting your account does not delete analytics data already sent to Google Firebase Analytics or exported to BigQuery. That data is identified by the pseudonymous member identifier and the app-installation and advertising identifiers described under "Analytics and advertising measurement" — never by your name or email address. Once your account is deleted it is no longer connected to your account records with us, and it is removed when the retention periods set out there expire.</p>
+      <p>Deleting your account also clears the app-installation identifier we gave RevenueCat, so RevenueCat no longer links your purchase record to your analytics data. If you bought Premium, RevenueCat keeps the record of that purchase: Premium belongs to the couple, and the record is needed to keep a linked partner's Premium and to handle refunds and restored purchases.</p>
     </section>
     <section id="children">
       <h2>Children</h2>
