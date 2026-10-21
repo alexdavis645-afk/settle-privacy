@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.settlebaby",
+      "sha256_cert_fingerprints": [
+        "0C:1D:66:7C:81:52:0E:B2:02:33:C5:8E:7F:E1:10:69:C5:2F:1A:80:C2:C6:01:AE:C0:DA:91:53:95:65:1D:F7"
+      ]
+    }
+  }
+]
