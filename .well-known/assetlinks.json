@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "com.settlebaby",
       "sha256_cert_fingerprints": [
-        "0C:1D:66:7C:81:52:0E:B2:02:33:C5:8E:7F:E1:10:69:C5:2F:1A:80:C2:C6:01:AE:C0:DA:91:53:95:65:1D:F7"
+        "0C:1D:66:7C:81:52:0E:B2:02:33:C5:8E:7F:E1:10:69:C5:2F:1A:80:C2:C6:01:AE:C0:DA:91:53:95:65:1D:F7",
+        "8C:4A:B3:04:74:D2:74:6B:F8:DF:98:7F:94:86:63:1C:2F:F5:37:03:DD:87:50:30:35:5C:76:11:14:49:61:7D"
       ]
     }
   }
